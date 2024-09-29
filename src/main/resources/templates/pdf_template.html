@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>PDF Template</title>
+</head>
+<body>
+<h1>Post Request Details</h1>
+
+<img th:src="'data:image/png;base64,' + ${base64Image}" alt="Logo" style="width:150px;height:150px;" />
+
+<p><strong>Document ID:</strong> <span th:text="${document.document_id}"></span></p>
+<p><strong>Language:</strong> <span th:text="${document.language}"></span></p>
+<p><strong>Type:</strong> <span th:text="${document.type}"></span></p>
+</body>
+</html>
